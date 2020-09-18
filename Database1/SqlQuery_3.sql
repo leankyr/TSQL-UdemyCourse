@@ -1,0 +1,1 @@
+﻿SELECT 11*12 AS TheAnswer
