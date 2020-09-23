@@ -1,0 +1,47 @@
+1. The problem is that they are all whole numbers - is that what is meant to happen?
+
+(More hints are below.)
+
+
+
+
+
+
+
+
+
+
+
+2. Use the FLOOR function.
+
+
+
+
+
+
+
+
+
+3. Use the CEILING function.
+
+
+
+
+
+
+
+
+
+4. Use the ROUND function. However it requires two arguments - the field, and something else...
+
+
+
+
+
+
+
+
+
+
+5. The problem is that, when you convert a number above 255 into a tinyint, it won't work - it's too big. To do a conversion with error checking, try putting a TRY_ before it...
+

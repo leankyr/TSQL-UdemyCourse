@@ -194,7 +194,7 @@ select SYSDATETIME() AS RightNow -- This one retunrs datetime2
 
 select dateadd(year,1,'2015-01-02 03:04:05') as myYear  -- adds one year as specified
 select datepart(hour,'2015-01-02 03:04:05') as myHour -- extracts the hour
-select datename(WEEK, getdate()) as myAnswer 
+select datename(month, getdate()) as myAnswer 
 select datediff(day,'2015-01-02 03:04:05',getdate()) as DaysElapsed -- returns an int datediff_big returns bigint
 
 
@@ -236,3 +236,5 @@ select format(cast('2015-06-25 01:02:03.456' as datetime),'D') as MyFormattedLon
 select format(cast('2015-06-25 01:02:03.456' as datetime),'d') as MyFormattedShortDate
 select format(cast('2015-06-25 01:59:03.456' as datetime),'dd-MM-yyyy') as MyFormattedBritishDate -- Months need to be in capitals
 select format(cast('2015-06-25 01:02:03.456' as datetime),'D','zh-CN') as MyFormattedInternationalLongDate
+
+select format(cast('2015-06-25 01:59:03.456' as datetime),'MM') as MyFormattedBritishDate
